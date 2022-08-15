@@ -17,7 +17,7 @@ const WidgeSm = () => {
                 <img src={profile} alt="" />
 
                 <div className="widgeSm-User">
-                    <span className="widgeSm-UserName">Sara ahmadi</span>
+                    <span className="widgeSm-UserName">Mahsa Shakeri</span>
                     <span className="widgeSm-UserTitle">Software Enginner</span>
                 </div>
                     <button className="widgeSm-btn">
@@ -32,7 +32,7 @@ const WidgeSm = () => {
                 <img src={profile} alt="" />
 
                 <div className="widgeSm-User">
-                    <span className="widgeSm-UserName">Sara ahmadi</span>
+                    <span className="widgeSm-UserName">Mahsa Shakeri</span>
                     <span className="widgeSm-UserTitle">Software Enginner</span>
                 </div>
                     <button className="widgeSm-btn">
@@ -47,7 +47,7 @@ const WidgeSm = () => {
                 <img src={profile} alt="" />
 
                 <div className="widgeSm-User">
-                    <span className="widgeSm-UserName">Sara ahmadi</span>
+                    <span className="widgeSm-UserName">Mahsa Shakeri</span>
                     <span className="widgeSm-UserTitle">Software Enginner</span>
                 </div>
                     <button className="widgeSm-btn">
@@ -63,7 +63,7 @@ const WidgeSm = () => {
                     <img src={profile} alt="" />
 
                     <div className="widgeSm-User">
-                        <span className="widgeSm-UserName">Sara ahmadi</span>
+                        <span className="widgeSm-UserName">Mahsa Shakeri</span>
                         <span className="widgeSm-UserTitle">Software Enginner</span>
                     </div>
                         <button className="widgeSm-btn">
@@ -80,7 +80,7 @@ const WidgeSm = () => {
                         <img src={profile} alt="" />
 
                         <div className="widgeSm-User">
-                            <span className="widgeSm-UserName">Sara ahmadi</span>
+                            <span className="widgeSm-UserName">Mahsa Shakeri</span>
                             <span className="widgeSm-UserTitle">Software Enginner</span>
                         </div>
                             <button className="widgeSm-btn">
