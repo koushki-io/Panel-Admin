@@ -1,12 +1,21 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom'
+
 import {PermIdentity,Storefront,AttachMoney,Equalizer} from '@mui/icons-material';
 
 const QuikMenu = () => {
+
+        const navigate= useNavigate();
+        const clickHandler=()=>{
+            navigate("/users")
+        }    
+
   return (
     <div className="sidebar-menu">
     <h3 className="sidebar-title">Quik Menu</h3>
     <ul className='sidebar-list'>
-        <li className='sidebar-list-item '>
+        <li 
+        onClick={clickHandler} className='sidebar-list-item '>
             <PermIdentity className='sidebar-icon'/>
             Users
  
