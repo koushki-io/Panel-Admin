@@ -8,7 +8,7 @@ return <button className={"widgeLg-Button "+ type}>{type}</button>
   }
   return (
     <div className='WidgeLg'>
-      <h3 className="widgeLg-title"> Lates Transactin</h3>
+      <h3 className="widgeLg-title"> Lates Transactoin</h3>
 
           <table className="widgeLg-table">
             <tr className='widgeLg-tr'>

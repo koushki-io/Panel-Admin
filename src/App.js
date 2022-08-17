@@ -5,7 +5,8 @@ import Sidebar from './components/sidebar/Sidebar';
 import TopBar from "./components/top-bar/TopBar";
 import { BrowserRouter,Routes,Route,Navigate } from "react-router-dom";
 import UserList from "./components/pages/userList/UserList";
-import UserID from "./components/pages/userList/userId/UserID";
+import UserID from "./components/pages/userId/UserID";
+import NewUser from "./components/pages/newUser/NewUser";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route  path="/Home"   element={<Home/>}/>
           <Route  path="/users"   element={<UserList/>}/>
           <Route  path="/users/:id"   element={<UserID/>}/>
+          <Route  path="/newuser"   element={<NewUser/>}/>
         </Routes>
 
         
