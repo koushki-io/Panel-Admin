@@ -21,7 +21,11 @@ const QuikMenu = () => {
  
         </li>
 
-        <li className='sidebar-list-item'>
+        <li 
+        onClick={()=>{
+            navigate("/products")
+        }}
+        className='sidebar-list-item'>
             <Storefront />
             Products
  

@@ -7,6 +7,8 @@ import { BrowserRouter,Routes,Route,Navigate } from "react-router-dom";
 import UserList from "./components/pages/userList/UserList";
 import UserID from "./components/pages/userId/UserID";
 import NewUser from "./components/pages/newUser/NewUser";
+import Products from "./components/pages/products/Products";
+import ProductId from "./components/pages/productId/ProductId";
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
           <Route  path="/users"   element={<UserList/>}/>
           <Route  path="/users/:id"   element={<UserID/>}/>
           <Route  path="/newuser"   element={<NewUser/>}/>
+          <Route  path="/products"   element={<Products/>}/>
+          <Route  path="/products/:id"   element={<ProductId/>}/>
         </Routes>
 
         

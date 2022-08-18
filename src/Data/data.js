@@ -9,6 +9,7 @@ import profile7 from '../images/profile_list7.jpg'
 import profile8 from '../images/profile_list8.jpg'
 import profile9 from '../images/profile_list9.jpg'
 import profile10 from '../images/profile_list10.jpg'
+import axios from 'axios'
 
 export const userRows = [
   { id: 1, username: 'reza ahmadi', avatar: profile1,email:"Rahmadi35@gmail.com" , status: 'active',transaction:"$57.30" },
@@ -23,6 +24,13 @@ export const userRows = [
   { id: 10, username: 'hosiyn bazvand', avatar: profile10,email:"Hbazvand977@gmail.com" , status: 'active',transaction:"$47.87" },
  
 ]
+
+export const productsData=async()=>{
+  const {data}=await axios.get("https://fakestoreapi.com/products")
+  return data
+
+}
+
 
 
 
@@ -99,4 +107,33 @@ export const UserData = [
         "pv": 4300,
         "amt": 2100
       }
+  ]
+
+
+  export const UserData2 = [
+    {
+      "name": "Jun",
+      "uv": 4000,
+      "pv": 2400,
+      "amt": 2400
+    },
+    {
+      "name": "Feb",
+      "uv": 3000,
+      "pv": 1398,
+      "amt": 2210
+    },
+    {
+      "name": "Mar",
+      "uv": 2000,
+      "pv": 9800,
+      "amt": 2290
+    },
+    {
+      "name": "Apr",
+      "uv": 2780,
+      "pv": 3908,
+      "amt": 2000
+    }
+   
   ]
