@@ -9,6 +9,7 @@ import UserID from "./components/pages/userId/UserID";
 import NewUser from "./components/pages/newUser/NewUser";
 import Products from "./components/pages/products/Products";
 import ProductId from "./components/pages/productId/ProductId";
+import NewProduct from "./components/pages/newProduct/NewProduct";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route  path="/newuser"   element={<NewUser/>}/>
           <Route  path="/products"   element={<Products/>}/>
           <Route  path="/products/:id"   element={<ProductId/>}/>
+          <Route  path="newProduct"   element={<NewProduct/>}/>
         </Routes>
 
         

@@ -1,10 +1,21 @@
 import React from 'react'
 import{useNavigate, useParams} from 'react-router-dom'
 import './user.css'
-import sara from '../../../images/profile_list4.jpg'
+import profile1 from '../../../images/profile_list1.jpg'
+import profile2 from '../../../images/profile_list2.jpg'
+import profile3 from '../../../images/profile_list3.jpg'
+import profile4 from '../../../images/profile_list4.jpg'
+import profile5 from '../../../images/profile_list5.jpg'
+import profile6 from '../../../images/profile_list6.jpg'
+import profile7 from '../../../images/profile_list7.jpg'
+import profile8 from '../../../images/profile_list8.jpg'
+import profile9 from '../../../images/profile_list9.jpg'
+import profile10 from '../../../images/profile_list10.jpg'
 import { CalendarToday, LocationSearching, MailOutline, PermIdentity, PhoneAndroid ,Publish} from '@mui/icons-material'
+import { userRows } from '../../../Data/data'
 
 const UserID = () => {
+  const profile=[profile1,profile2,profile3,profile4,profile5,profile6,profile7,profile8,profile9,profile10]
     const {id}=useParams()
      const navigate= useNavigate()
 
@@ -22,10 +33,10 @@ const UserID = () => {
       <div className="user-container">
       <div className="user-show">
         <div className="user-show-top">
-          <img src={sara} alt="profile" />
+          <img src={profile[id -1]} alt="profile" />
           <div className="user-show-title">
-            <span className='user-username'>sara ahmadi</span>
-            <span className='user-username-title'>sofware engineer</span>
+            <span className='user-username'>{userRows[id -1].username}</span>
+            <span className='user-username-title'>{userRows[id -1].jobTitle}</span>
           </div>
         </div>
 
@@ -34,7 +45,7 @@ const UserID = () => {
                     
                     <div className="user-bottom-info">
                       <PermIdentity classname="user-show-icon"/>
-                          <span className="user-show-info">saraahmadi99</span>
+                          <span className="user-show-info">{userRows[id -1].username}99</span>
                     </div>
                     <div className="user-bottom-info">
                       <CalendarToday classname="user-show-icon"/>
@@ -49,7 +60,7 @@ const UserID = () => {
 
                     <div className="user-bottom-info">
                       <MailOutline classname="user-show-icon"/>
-                          <span className="user-show-info">saraahmadi99@gmail.com</span>
+                          <span className="user-show-info">{userRows[id -1].email}</span>
                     </div>
 
                     <div className="user-bottom-info">
@@ -98,7 +109,7 @@ const UserID = () => {
           </div>
           <div className="update-right">
             <div className="user-update-upload">
-              <img src={sara} alt="profile" />
+              <img src={profile[id -1]} alt="profile" />
               <label htmlFor="file"><Publish className="user-update-icon"/></label>
               <input type="file" id='file'  style={{display:"none"}}/>
             </div>

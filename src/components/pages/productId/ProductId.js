@@ -5,6 +5,7 @@ import Chart from '../../chart/Chart'
 import {UserData2} from '../../../Data/data'
 import axios from 'axios'
 import { useEffect } from 'react'
+import {Publish} from '@mui/icons-material'
 import { useState } from 'react'
 
 
@@ -30,7 +31,7 @@ const ProductId = () => {
         <div className="product-container">
         <h1>Product</h1>
         <button onClick={()=>{
-            navigate("/newProdut")
+            navigate("/newProduct")
         }}
 
         className="prduct-add-btn">Create</button>
@@ -79,7 +80,40 @@ const ProductId = () => {
             </div>
 
         </div>
-            <div className="product-bottom"></div>
+            <div className="product-bottom">
+                <form onSubmit={(e)=>e.preventDefault()}>
+                    <div className="productForm-left">
+                        <label>Product Name</label>
+                        <input type="text" name='productname' 
+                        placeholder={product.title}
+                        />
+                        <label>In Stock</label>
+                        <select name="instock" id="instock">
+                            <option value="yes">yes</option>
+                            <option value="no">no</option>
+                        </select>
+                        <label>Active</label>
+                        <select name="instoactiveck" id="active">
+                            <option value="yes">yes</option>
+                            <option value="no">no</option>
+                        </select>
+
+                    </div>
+                    <div className="productForm-right">
+                        <div className="product-upload">
+                            <img src={product.image} alt="product" />
+                            <label htmlFor="file">
+                                <Publish/>
+                            </label>
+                            <input type="file" name='file' id='file' style={{display:"none"}} />
+                        </div>
+
+                        <button className="product-btn">
+                            Update
+                        </button>
+                    </div>
+                </form>
+            </div>
     </div>
     
   )
