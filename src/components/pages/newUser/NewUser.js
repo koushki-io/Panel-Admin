@@ -5,6 +5,7 @@ const NewUser = () => {
   return (
     <div className='NewUser'>
         <h1>New User</h1>
+        
         <form>
             <div className="new-user-item">
                 <label>Username</label>

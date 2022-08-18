@@ -6,9 +6,9 @@ import NotifiCations from './Notifications';
 import Staff from './Staff';
 
 
-const Sidebar = () => {
+const Sidebar = ({setsidebarShow,sidebarShow}) => {
   return (
-    <div className='sidebar'>
+    <div className={sidebarShow ? 'sidebar' : "hidedn"} >
         <div className="sidebar-wrapper">
                  <Dashbord/>
                  <QuikMenu/>

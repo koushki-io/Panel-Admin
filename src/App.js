@@ -1,5 +1,5 @@
 import Home  from  "./components/pages/home/Home";
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Sidebar from './components/sidebar/Sidebar';
 import TopBar from "./components/top-bar/TopBar";
@@ -12,11 +12,14 @@ import ProductId from "./components/pages/productId/ProductId";
 import NewProduct from "./components/pages/newProduct/NewProduct";
 
 const App = () => {
+  const [sidebarShow, setsidebarShow] = useState(true)
+  console.log(sidebarShow);
   return (
     <BrowserRouter>
-      <TopBar />
+      <TopBar setsidebarShow={setsidebarShow} />
       <div className="container">
-        <Sidebar/>
+        <Sidebar setsidebarShow={setsidebarShow}  sidebarShow={sidebarShow}/>
+
         <Routes>
           <Route  path="/"   element={<Navigate to="/Home"/>}></Route>
           <Route  path="/Home"   element={<Home/>}/>

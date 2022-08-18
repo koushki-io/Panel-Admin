@@ -62,4 +62,16 @@ margin-top: 15px;
     cursor: pointer;
     padding: 10px 20px;
 }
+@media (max-width:1110px) {
+    .NewUser form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+     
+    }
+    .new-user-button{
+        margin-bottom: 30px;
+    }
+}
 

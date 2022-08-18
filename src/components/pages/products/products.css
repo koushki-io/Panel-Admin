@@ -1,5 +1,6 @@
 .Products{
     flex: 4;
+    height: 80vh;
 }
 .product-list-img {
     display: flex;

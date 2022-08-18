@@ -23,6 +23,7 @@
 }
 .product-top{
     display: flex; 
+
   
 }
 
@@ -131,4 +132,13 @@ border-radius: 10px;
     color: #fff;
     font-weight: 600;
     cursor: pointer;
+}
+@media (max-width:1200px) {
+    .product-top{
+        flex-direction: column;
+    }
+    
+    .product-container{
+            padding:0 40px ;
+    }
 }

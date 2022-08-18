@@ -3,13 +3,17 @@ import {NotificationsNone,Settings,Language} from '@mui/icons-material';
 import './topBar.css'
 import profile from '../../images/profile.jpg'
 
-const TopBar = () => {
+const TopBar = ({setsidebarShow}) => {
   return (
     <div
     className='topBar'>
         <div className="topBar-wrapper">
             <div className="top-left">
-               <span className='logo'>
+               <span 
+               onClick={()=>{
+                setsidebarShow(last=>!last)
+               }}
+               className='logo'>
                 koushki
                </span>
             </div>

@@ -1,13 +1,20 @@
 .newProduct{
     flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .newProduct>form{
     margin-top: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    border-radius: 10px;
 
 }
 .add-product-item{
-    width: 250px;
+    width:35vw;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;

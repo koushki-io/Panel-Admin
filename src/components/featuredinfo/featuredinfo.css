@@ -1,14 +1,11 @@
 .featuredinfo{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-   
-    
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
 
 }
 .featured-item{
-    flex: 1;
-    margin: 0 20px;
+   
+    margin: 10px 20px;
     padding: 30px;
     cursor: pointer;
     box-shadow: rgba(2, 1, 1, 0.35) 0px 5px 15px;
@@ -50,4 +47,23 @@
     font-weight: 600;
 
 
+}
+@media (max-width:1000px) {
+    .featuredinfo{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media (max-width:850px) {
+    .featuredinfo{
+       display: grid;
+       grid-template-columns:  1fr;
+    }
+    .featured-item{
+        width: 50vw;
+    }
+    
+    
 }
